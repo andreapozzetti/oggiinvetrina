@@ -1,0 +1,34 @@
+<ion-view view-title="{{'Offers' | translate}}" ng-cloak>
+	<ion-header-bar class="bar bar-subheader">
+    	<div class="tabs">
+        	<a class="tab-item" ng-repeat="category in categories" ng-click="setCategory(category.id)" ng-class="{active: $index == selectedCategory}">
+            {{category.name | translate}}
+        	</a>
+        </div>
+    </ion-header-bar>
+	<ion-content class="has-subheader">
+		<div class="card" ng-hide="!noOffers">
+			<div class="item item-text-wrap text-center">
+		    	{{noOffersText | translate}}
+			</div>
+		</div>
+		<div class="item item-input-inset" ng-hide="noOffers">
+			<div class="item-input-wrapper">
+				<i class="icon ion-search placeholder-icon"></i>
+				<input type="search" name="search" placeholder="{{'Search brand or product' | translate}}" ng-model="query">
+			</div>
+		</div>
+		<div class="list card" ng-repeat="offer in offers | orderBy:order:reverse | filter:query" ng-hide="noOffers">
+			<a class="offer-list" ng-click="goToOffer(offer.id)"> 
+			<div class="item item-image">
+				<img style="max-height:240px; max-width:640px" class="module bounce" src="{{offer.photo_1}}" >
+			</div>
+			<div class="item item-text-wrap">
+			    <h2>{{offer.name}}</h2>
+			    <p>{{offer.shop}}</p>
+			    <p><span class="date-expire"><span translate>Until</span> {{offer.dateExpire}}</span><span class="list-price"><span ng-show="offer.offerPrice" class="offer-price-list">{{offer.offerPrice}}€</span> <span ng-show="offer.discount" class="discount-list">{{offer.discount}}%</span></span></p>
+			</div>
+			</a>
+		</div>
+	</ion-content>
+</ion-view>

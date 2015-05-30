@@ -1,0 +1,43 @@
+/* OFFERS LIST */
+
+.tab-item.active{
+	border-bottom: 1px solid #fd613d;
+}
+
+a.offer-list{
+	text-decoration: none;
+}
+
+.offer-price-list{
+	color: #fd613d;
+	font-size: 20px;
+}
+
+.list-price{
+	float: right;
+}
+
+.button.button-icon.input-button {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  color: #bbb;
+}
+
+/* OFFER PAGE */
+
+.price{
+	text-decoration: line-through;
+	font-size: 16px;
+}
+
+.offer-price{
+	font-weight: bold;
+	color: #fd613d;
+	font-size: 20px;
+}
+
+.discount{
+	float: right;
+
+}

@@ -1,0 +1,14 @@
+[
+    {
+        "idCategory": 1,
+        "name": "Health & Beauty"
+    },
+    {
+        "idCategory": 2,
+        "name": "Shopping"
+    },
+    {
+        "idCategory": 3,
+        "name": "Leisure time"
+    }
+]

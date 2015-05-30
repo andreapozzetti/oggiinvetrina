@@ -1,0 +1,39 @@
+<ion-view view-title="{{'Offer' | translate}}" ng-cloak>
+  <ion-content>
+	<div class="list card">
+	  <div class="item item-divider item-text-wrap">
+		<h2>{{offer.name}}</h2>
+		<p>{{offer.shop}} - {{offer.shop_address}}</p>
+	  </div>
+	  <div class="item item-image">
+		<ion-slide-box show-pager="{{offer.photos.length >=2 ? 'true' : 'false'}}">
+		    <ion-slide ng-repeat="photo in offer.photos">
+		        <img style="max-height:240px; max-width:640px" class="module bounce" src="{{photo.url}}" > 
+		    </ion-slide>
+		</ion-slide-box>
+	  </div>
+	  <div class="item">
+		<p><span class="price" ng-show="offer.price">{{offer.price}}€</span> <span ng-show="offer.offerPrice" class="offer-price">{{offer.offerPrice}}€</span> <span ng-show="offer.discount" class="discount" translate><span translate>Discount</span> {{offer.discount}}%</span></p>
+		<p><span translate>Until</span> {{offer.expire}}</p>
+		<p><span ng-repeat="brand in offer.brands">{{brand.brand}}{{$last ? '' : ', '}}</span></p>
+	  </div>
+	  <div class="item item-text-wrap">
+	  	<p>{{offer.description}}</p>
+	  </div>
+	  <!--
+	  <div class="item tabs tabs-secondary tabs-icon-left">
+	    <a class="tab-item" href="#">
+	      <i class="icon ion-share"></i>
+	      Share
+	    </a>
+	  </div>
+	  -->
+	</div>
+  </ion-content>
+</ion-view>
+
+
+
+              
+
+

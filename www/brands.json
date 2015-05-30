@@ -1,0 +1,22 @@
+[
+    {
+        "idBrand": 56,
+        "name": "Apple"
+    },
+    {
+        "idBrand": 48,
+        "name": "Armani"
+    },
+    {
+        "idBrand": 36,
+        "name": "D&G"
+    },
+    {
+        "idBrand": 21,
+        "name": "Gucci"
+    },
+    {
+        "idBrand": 75,
+        "name": "Candy"
+    }
+]

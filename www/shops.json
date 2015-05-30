@@ -1,0 +1,34 @@
+[
+    {
+        "idShop": 1,
+        "name": "Apple Store",
+        "address": "via Milano 15",
+        "latitude": "45.456545",
+        "longitude": "9.44548",
+        "last_update": 987654321
+    },
+    {
+        "idShop": 2,
+        "name": "Euronics",
+        "address": "viale Lecco 50",
+        "latitude": "45.456545",
+        "longitude": "9.44548",
+        "last_update": 987654321
+    },
+    {
+        "idShop": 3,
+        "name": "Tessabit",
+        "address": "viale Varese 25",
+        "latitude": "45.456545",
+        "longitude": "9.44548",
+        "last_update": 987654321    
+    },
+    {
+        "idShop": 4,
+        "name": "La Telefonia",
+        "address": "via Castelnuovo 13",
+        "latitude": "45.456545",
+        "longitude": "9.44548",
+        "last_update": 987654321
+    }
+]
