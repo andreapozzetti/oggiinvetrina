@@ -535,8 +535,16 @@ angular.module('starter.services', [])
                 
                 if ( !offer[ row.offer_id ] ) {
 
-                  var daytoshow = row.expire-86400
+                  navigator.notification.alert(row.expire);
+				  
+				  var  = row.expire-86400;
+				  
+				  navigator.notification.alert(daytoshow);
+				  
                   var d = new Date(daytoshow);
+				  
+				  navigator.notification.alert(d);
+				  
                   var day = d.getDate();
                   var month = d.getMonth()+1;
                   var year = d.getFullYear();
