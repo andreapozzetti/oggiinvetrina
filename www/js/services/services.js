@@ -537,7 +537,7 @@ angular.module('starter.services', [])
 
                   navigator.notification.alert(row.expire);
 				  
-				  var  = row.expire-86400;
+				  var daytoshow = row.expire-86400;
 				  
 				  navigator.notification.alert(daytoshow);
 				  
